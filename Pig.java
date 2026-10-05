@@ -1,3 +1,19 @@
-public class Pig {
-    
+public class Pig extends Animal
+{
+    private String sound;
+    private String type;
+
+    public Pig (String sound, String type)
+    {
+        this.sound = sound;
+        this.type = type;
+    }
+    public String getSound()
+    {
+        return sound;
+    }
+    public String getType()
+    {
+        return type;
+    }
 }
