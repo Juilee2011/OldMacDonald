@@ -1,9 +1,9 @@
-public class Chick extends Animal 
+public class Chick implements Animal 
 {
     private String sound1;
     private String sound2;
     private String type;
-    private int randomSounds = (int)(Math.random()*2);
+    private int randomSounds = (int)(Math.random()*2 + 1);
 
     public Chick(String sound1)
     {
@@ -17,14 +17,15 @@ public class Chick extends Animal
     }
     public String getSound()
     {
-        if (sound1 == 1)
+        if (randomSounds == 1)
         {
             return sound1;
         }
-        if (sound2 == 2)
+        if (randomSounds == 2)
         {
             return sound2;
         }
+        return sound1;
     }
     public String getType()
     {

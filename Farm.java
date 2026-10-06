@@ -4,7 +4,7 @@ public class Farm
     Farm()
     {
         a [0] = new Cow("cow", "moo");
-        a [1] = new Chick("chick", "cluck");
+        a [1] = new Chick("cheep", "cluck", "Chick");
         a [2] = new Pig("pig", "oink");
 
     }
@@ -16,4 +16,5 @@ public class Farm
             System.out.println(a[i].getType() + " goes " + a[i].getSound());
         }
     }
+    System.out.println("The cow is known as " + (((NamedCow)a[0]).getName()));
 }

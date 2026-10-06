@@ -1,4 +1,4 @@
-public class Pig extends Animal
+public class Pig implements Animal
 {
     private String sound;
     private String type;
